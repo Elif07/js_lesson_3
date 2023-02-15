@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="avatar.png">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Task 4 </title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 4</h1>
+         <p>З клавіатури вводиться вік людини. Вивести на екран ким він є (дитиною у садочку, школярем, студентом, працівником,
+         пенсіонером).</p>
+         <script>
+            //вводимо дані
+            const childAge = 2
+            const schooldAge = 6
+            const studentldAge = 18
+            const workerdAge = 23
+            const retirementAge = 65
+            let userAge = parseInt(prompt('введіть свій вік', '0'))
+
+            //знаходимо результат
+            //виводимо результат
+             if (userAge < childAge)
+                  document.write(``)
+            else if (userAge < schooldAge)
+            document.write(`Ви є дитиною`)
+           
+            else if ( userAge < studentldAge)
+            document.write(`Ви є школяр`)
+            else if ( userAge < workerdAge)
+               document.write(`Ви є студент`)
+               else if ( userAge < retirementAge)
+               document.write(`Ви є робітник`)
+               else 
+               document.write(`Ви є пенсіонером`)
+         </script>
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>

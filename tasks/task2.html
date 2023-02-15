@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="avatar.png">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Task 2</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 2</h1>
+         <p>З клавіатури вводиться ціна товару і кількість грошей. Якщо грошей не вистачає то відмовляємо у покупці, інакше, якщо ще
+         залишаються гроші, то пропонуємо купити лотерею за 4 грн.</p>
+         <script>
+              //вводимо дані
+               let priceOfProduct = parseFloat(prompt('введіть ціну товару ', '0'))
+               let totalMoney = parseFloat(prompt('введіть загальну кількість грошей ', '0'))
+               const lotteryPrice = 4
+               //знаходимо результат
+               //виводимо результат
+               let remainderMohey = totalMoney - priceOfProduct
+               if (priceOfProduct > totalMoney)
+               document.write(`Не достатньо коштів на рахунку, покупку відхилено!`)
+               else if(priceOfProduct <= totalMoney && remainderMohey >= lotteryPrice)
+                  document.write(`У Вас є можливість придбати лотерею за 4 грн`)
+                else
+                  document.write(`Дякуємо за покупку!`)  
+            
+            
+         </script>
+      </main>
+      <footer class="footer">
+      </footer> 
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>

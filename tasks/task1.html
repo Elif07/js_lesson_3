@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="shortcut icon" href="avatar.png">
+   <link rel="stylesheet" href="css/reset.css">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Task 1</title>
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+      </header>
+      <main class="page">
+         <h1>Задача 1</h1>
+         <p>З клавіатури вводяться імена двох дітей та кількість у них цукерок. Вивести не екран ім’я тієї дитини, у якої кількість
+         цукерок є більшою, або вивести, що кількість однакова.</p>
+         <script>
+            //вводимо дані
+            let nameFirstChild = prompt('введить імя першої дитини', '')
+            let nameSecondChild = prompt('введить імя другої дитини', '')
+
+            let quantityFirstChild = parseInt(prompt('введить кількість цукерок першої дитини', '0'))
+             let quantitySecondChild = parseInt(prompt('введить кількість цукерок другої дитини', '0'))
+            //знаходимо результат 
+             //виводимо результат
+           if (quantityFirstChild > quantitySecondChild)
+            document.write(`Кількість цукерок більше у ${nameFirstChild}`)
+            else if (quantityFirstChild < quantitySecondChild)
+            document.write(`Кількість цукерок більше у ${nameSecondChild}`)
+            else (
+               document.write(`Кількість цукерок одинакова і у ${nameFirstChild} і у  ${nameSecondChild}`)
+            )
+           
+         </script>
+      
+      </main>
+      <footer class="footer">
+      </footer>
+   </div>
+   <!-- <script src="js/script.js">
+   </script> -->
+</body>
+
+</html>
